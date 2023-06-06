@@ -1,33 +1,166 @@
 <html>
-    <center><h1>Hello World!</h1>
     <hr>
-    <h2>Intro to Engineering Class 2023 Semester 2</h2>
+    <!DOCTYPE html>
+<head>
+    <style>
+        @keyframes slide {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        .title {
+            font-size: 36px;
+            animation: slide 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Semester 2 Enginneering Website</h1>
+</body>
     
     <h1><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Click this link for a virus</a></h1>
     <body style="background-color:lightblue;">
   
     
-    <h2> Engineering Journal</h2>
-    <p>4/10/23 - We started to make a boat big enough to hold 2 people.
-    We will float in a race across the pool. We need to make sure that 
-    it will float when 2 people are in it, We will have the 2 people sit one infront 
-    of the other is the boat and use hand paddles to row forward</p>
+    <style>
+        @keyframes slide in {
+           0% {
+            transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-100%);
+      }
+    }
     
-    <p>3/24/23 - We started an egg drop contest.We started with a list of materials and 
-    sketched out a CAD of our project. It consists of tape and straws. The egg will be 
-    in the middle and the egg will be safe because the straws will absorb the blow of 
-    the egg. Also it is light weight so it won't go down as hard.</p>
+    .animated-text {
+        animation: slide-in 1s ease-out;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+    </style>
     
-    <p>1/30/23 - Our car worked! it went far enough to go halfway across the 
-    cafeteria floor. I got a good grade on it and I know I did the best I 
-    possibly could have.</p>
+    <div class="animated-text">Engineering Website</div>
     
     <p>1/10/23 - We starteded to make a car out of a mouse trap, our 
     design involves a car with CD wheels and electrical tape as the grip.
     We used wooden sticks as our axle for our wheel. We used that same wooden 
     stick as a extension of the mouse trap to increase the length it could pull
     the car</p>
+    
+    <p>1/30/23 - Our car worked! it went far enough to go halfway across the 
+    cafeteria floor. I got a good grade on it and I know I did the best I 
+    possibly could have.</p>
+    
+    <p>3/24/23 - We started an egg drop contest.We started with a list of materials and 
+    sketched out a CAD of our project. It consists of tape and straws. The egg will be 
+    in the middle and the egg will be safe because the straws will absorb the blow of 
+    the egg. Also it is light weight so it won't go down as hard.</p>
+    
+    <p>4/10/23 - We started to make a boat big enough to hold 2 people.
+    We will float in a race across the pool. We need to make sure that 
+    it will float when 2 people are in it, We will have the 2 people sit one infront 
+    of the other is the boat and use hand paddles to row forward</p>
+    
+    <p>5/15/23 - We made our boat and it is ready. We ran out of tape faster
+    than we wanted to but it is ok. We wanted to make our boat very long but 
+    thats when we ran out of tape. We had to bend up the back but we made
+    it nice and added a window to the back.</p>
+    
+    <p>4/10/23 - We started to make a boat big enough to hold 2 people.
+    We will float in a race across the pool. We need to make sure that 
+    it will float when 2 people are in it, We will have the 2 people sit one infront 
+    of the other is the boat and use hand paddles to row forward</p>
+    
+    <p>6/6/23 - It has been. while sinse an update because not much as changed, 
+    but we have finished the class and our project. we were forced to cut our boat
+    to be shorter than we had hoped but we were able to make a cool design out of it.
+    Our boat did not do as well as we had hoped and basically failed immediatly. I am 
+    still happy with it though even if it failed.</p>
+    
+    
+    
+    
     <h4><img src="IMG_6491.jpg"width="200" height="200"></img></h4>
-    <video width="320" height="240" controls>(UPDATE WITH NEW VIDEO)
-        <source src= "IMG_6488.MOV" type=video/MOV>
-</html>    
+   
+   
+   
+<head>
+  <style>
+    .quote-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .quote {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      font-style: italic;
+      color: #888;
+    }
+
+    .generate-button {
+      background-color: #2196F3;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .generate-button:hover {
+      background-color: #0D47A1;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-container">
+    <p class="quote">"Stay hungry, stay foolish."</p>
+    <p class="author">- Steve Jobs</p>
+    <button class="generate-button">Generate Quote</button>
+  </div>
+
+  <script>
+    const quotes = [
+      {
+        quote: "Stay hungry, stay foolish.",
+        author: "Steve Jobs"
+      },
+      {
+        quote: "Innovation distinguishes between a leader and a follower.",
+        author: "Steve Jobs"
+      },
+      {
+        quote: "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+        author: "Steve Jobs"
+      },
+      {
+        quote: "The only way to do great work is to love what you do.",
+        author: "Steve Jobs"
+      },
+      {
+        quote: "Stay hungry, stay foolish.",
+        author: "Steve Jobs"
+      }
+    ];
+
+    function generateQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const quote = quotes[randomIndex];
+
+      const quoteElement = document.querySelector('.quote');
+      const authorElement = document.querySelector('.author');
+
+      quoteElement.textContent = `"${quote.quote}"`;
+      authorElement.textContent = `- ${quote.author}`;
+    }
+
+    const generateButton = document.querySelector('.generate-button');
+    generateButton.addEventListener('click', generateQuote);
+  </script>
+</body>
+</html>
